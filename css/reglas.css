@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: orange;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 501;
+}
+
+header > div {
+    min-height: 22vh;
+    position: relative;
+}
+
+.navegador {
+    position: absolute;
+}
+
+.logo {
+    max-width: 15%;
+    text-align: center;
+    padding: 0.5em;
+}
+
+.logo h1 {
+    cursor: default;
+}
+
+.logo img {
+    width: 50%;
+}
+
+.navegador {
+    right: 5%;
+    top: 30%;
+}
+
+.navegador ul, .navegador li {
+    display: inline-block;
+}
+
+.navegador ul {
+    list-style: none;
+}
+
+.navegador li {
+    padding: 1em;
+}
+
+.navegador ul li a {
+    padding: 1em;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.navegador ul li a:hover {
+    padding: 1em;
+    color: orange;
+    background-color: white;
+    text-decoration: underline;
+    font-weight: bolder;
+    border-radius: 0.5em;
+}
+
+
+
+main, main div {
+    width: 80%;
+    margin: 3em auto;
+}
+
+main div {
+    padding: 2em;
+    border: 2px solid orange;
+}
+
+.gallery {
+    text-align: center;
+    height: 50vh;
+    margin-bottom: 7em;
+    position: relative;
+}
+
+figure {
+    position: absolute;
+    width: 20%;
+    background: linear-gradient(to top right, rgba(255,255,255,0.2), orange);
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+
+figure img {
+    width: 80%;
+}
+
+.li1 {
+    left: 20%;
+    top: 30%;
+    z-index: 1;
+    transform: rotate(50deg);
+}
+.li2 {
+    left: 35%;
+    top: 35%;
+    z-index: 8;
+    transform: rotate(-15deg);
+}
+.li3 {
+    left: 50%;
+    top: 25%;
+    z-index: 9;
+    transform: rotate(-40deg);
+}
+.li4 {
+    left: 60%;
+    top: 40%;
+    z-index: 1;
+    transform: rotate(25deg);
+}
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 500;
+}
+
+footer address, footer div {
+    display: inline-block;
+    padding: 1em;
+}
+
+address a, .social a {
+    color: black;
+    text-decoration: none;
+}
+
+address a:hover {
+    text-decoration: underline;
+}
+
+.social, footer address, .copy {
+    text-align: center;
+}
+
+.social img {
+    width: 10%;
+}
